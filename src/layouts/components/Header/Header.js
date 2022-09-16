@@ -1,4 +1,5 @@
 import React from "react";
+import images from "../../../asssets/image";
 import Image from "../../../components/Image/Image";
 import NavBarItem from "../../../components/NavBarItem/NavBarItem";
 import NavBar from "../NavBar/NavBar";
@@ -8,12 +9,14 @@ function Header() {
   return (
     <>
       <div className="container-fluid">
-        <div className="background"></div>
+        <div className="background">
+          <Image src={images.backgroundHeader} />
+        </div>
       </div>
       <div className="container">
         <header className="header" id="header">
-          <div className="logo">
-            <Image src="../../assets/image/logo.png" alt="Logo" />
+          <div id="logo">
+            <Image src={images.logo} alt="Logo" />
           </div>
           <NavBar>
             <NavBarItem>HOME</NavBarItem>

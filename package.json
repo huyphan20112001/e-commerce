@@ -1,5 +1,5 @@
 {
-  "homepage": "http://huyphan20112001.github.io/ecommerce",
+  "homepage": "http://huyphan20112001.github.io/e-commerce",
   "name": "e-commerce",
   "version": "0.1.0",
   "private": true,
@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
