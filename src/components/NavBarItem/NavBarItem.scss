@@ -1,0 +1,11 @@
+.menu-item a {
+  color: var(--grey);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.menu-item a:hover {
+  color: var(--white);
+}
+.menu-item:not(:last-child) a {
+  margin-right: 50px;
+}
