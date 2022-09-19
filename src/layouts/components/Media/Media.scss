@@ -1,0 +1,17 @@
+#media {
+  padding: 70px 0;
+}
+
+.media-list {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 70px;
+}
+.media-heading {
+  font-size: 3.9rem;
+  font-weight: 600;
+  line-height: 3.9rem;
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 58px;
+}

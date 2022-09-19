@@ -1,0 +1,32 @@
+.reason {
+  background-color: var(--white);
+  padding: 100px 0;
+}
+
+.reason-wrapper {
+  display: flex;
+  align-items: center;
+}
+.reason-video {
+  border-radius: 36px;
+  overflow: hidden;
+  margin-right: 68px;
+}
+.reason-heading {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+.reason-detail p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: var(--grey-3b);
+  margin-bottom: 15px;
+  max-width: 780px;
+}
+.reason-detail p:last-child {
+  margin-bottom: 40px;
+}

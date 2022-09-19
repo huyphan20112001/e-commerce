@@ -1,0 +1,38 @@
+.service-item {
+  background-color: var(--grey-e3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 36px;
+  height: 400px;
+  padding: 20px;
+}
+.service-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.service-title {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 160%;
+  color: #000000;
+}
+.service-desc {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #000000;
+  line-height: 160%;
+  margin-bottom: 40px;
+}
+.service-img {
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.service-img,
+.service-info {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.service-info {
+  max-width: 525px;
+}

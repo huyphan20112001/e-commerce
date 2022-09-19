@@ -1,16 +1,33 @@
-
 #banner {
+  padding-bottom: 167px;
   margin-top: 132px;
+  position: relative;
+  z-index: 10;
+}
+@keyframes showContent {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .banner-show {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
+}
+.banner-show.active {
+  display: flex;
 }
 .banner-desc,
 .banner-video {
   flex: 0 0 50%;
   max-width: 50%;
+  animation: showContent 0.5s linear;
 }
 .banner-desc {
   max-width: 610px;
@@ -32,4 +49,29 @@
 .banner-video img {
   width: 85%;
   margin-left: auto;
+}
+
+.banner-dots {
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 125px;
+}
+.banner-dots .banner-dot:not(:last-child) {
+  margin-right: 10px;
+}
+.banner-dot {
+  background: rgba(255, 255, 255, 0.23);
+  border-radius: 10px;
+  width: 40px;
+  height: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.banner-dot.active {
+  width: 70px;
+  background: #ffffff;
+  border-radius: 10px;
 }

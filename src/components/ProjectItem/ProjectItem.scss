@@ -1,0 +1,24 @@
+.project-item {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.project-info {
+  position: absolute;
+  bottom: 0;
+  color: var(--white);
+  text-align: center;
+  width: 100%;
+}
+.project-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  color: var(--white);
+}
+.project-location {
+  font-size: 1.6rem;
+  font-size: 400;
+  line-height: 1.9rem;
+  color: var(--white);
+}

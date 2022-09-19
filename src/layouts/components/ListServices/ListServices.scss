@@ -1,0 +1,21 @@
+.list-services {
+  background-color: var(--black);
+  padding: 39px 0 61px 0;
+}
+
+.list-services-heading {
+  font-size: 4.8rem;
+  line-height: 5.8rem;
+  color: var(--white);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.list-services-item {
+  display: grid;
+  gap: 30px;
+  grid-template-columns:
+    calc(100% / 3 - 20px) calc(100% / 3 - 20px)
+    calc(100% / 3 - 20px);
+  grid-template-rows: calc(100% / 2 - 15px) calc(100% / 2 - 15px);
+}

@@ -1,0 +1,16 @@
+.list-service-item {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.list-service-title {
+  position: absolute;
+  bottom: 26px;
+  width: 100%;
+  text-align: center;
+  color: var(--white);
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+}

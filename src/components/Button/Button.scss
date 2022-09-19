@@ -1,0 +1,36 @@
+.btn-primary {
+  color: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 9px;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: 700;
+  display: block;
+  height: 52px;
+  text-align: center;
+}
+
+.btn-learn {
+  padding: 16px 37px;
+  width: 180px;
+}
+.btn-view-black {
+  color: var(--black);
+  border: 2px solid var(--black);
+}
+.btn-view-black-full {
+  background-color: var(--black);
+  line-height: 1.6rem;
+  height: 48px;
+  width: 180px;
+}
+.btn-project {
+  height: 48px;
+  padding: 14px 32px;
+}
+.btn-read {
+  padding: 16px 42px;
+}
+.btn-view-all {
+  margin: 0 auto;
+}
