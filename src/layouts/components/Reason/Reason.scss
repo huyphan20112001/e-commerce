@@ -30,3 +30,15 @@
 .reason-detail p:last-child {
   margin-bottom: 40px;
 }
+
+.dark .reason {
+  background-color: var(--black);
+}
+.dark .reason-heading,
+.dark .reason-detail p {
+  color: var(--white);
+}
+.dark .btn-view-black-full {
+  color: var(--white);
+  border: 2px solid var(--white);
+}

@@ -9,3 +9,14 @@
 .menu-item:not(:last-child) a {
   margin-right: 50px;
 }
+.dark .menu-item a:hover {
+  color: var(--black);
+}
+
+.menu-item.active a {
+  color: var(--white);
+}
+
+.dark .menu-item.active a {
+  color: var(--black);
+}

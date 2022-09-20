@@ -45,10 +45,20 @@
   font-weight: 400;
   color: var(--grey-a4);
   margin-bottom: 58px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+  width: 100%;
+  -webkit-line-clamp: 3;
+  height: 75px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 .banner-video img {
   width: 85%;
   margin-left: auto;
+  cursor: pointer;
+  max-height: 400px;
 }
 
 .banner-dots {
@@ -74,4 +84,21 @@
   width: 70px;
   background: #ffffff;
   border-radius: 10px;
+}
+.dark .banner-title {
+  color: var(--black);
+}
+.dark .banner-desc {
+  color: var(--grey-61);
+}
+.dark .btn-learn {
+  border: 2px solid var(--black);
+  color: var(--black);
+}
+.dark .banner-dot {
+  background: rgba(17, 16, 16, 0.23);
+}
+
+.dark .banner-dot.active {
+  background-color: var(--black);
 }

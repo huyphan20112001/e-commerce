@@ -36,15 +36,23 @@ const listServices = [
   },
 ];
 
-function ListServicesItem() {
+function ListServicesItem({ mode }) {
+  const handleClick = () => {
+    alert("SOS");
+  };
   return (
     <>
       {listServices.map((service) => (
-        <div key={service.id} className="list-service-item">
+        <div
+          onClick={handleClick}
+          key={service.id}
+          className="list-service-item"
+        >
           <div className="list-service-img">
             <Image src={service.img} alt={service.title} />
           </div>
           <div className="list-service-title">{service.title}</div>
+          <div className="background-bottom"></div>
         </div>
       ))}
     </>

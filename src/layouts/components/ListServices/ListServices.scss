@@ -19,3 +19,11 @@
     calc(100% / 3 - 20px);
   grid-template-rows: calc(100% / 2 - 15px) calc(100% / 2 - 15px);
 }
+
+.list-services.dark {
+  background-color: var(--white);
+}
+
+.dark .list-services-heading {
+  color: var(--black);
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import images from "../../../asssets/image";
 import Image from "../../../components/Image/Image";
 import NavBarItem from "../../../components/NavBarItem/NavBarItem";
@@ -6,38 +6,81 @@ import Banner from "../Banner/Banner";
 import NavBar from "../NavBar/NavBar";
 import "./Header.scss";
 
-function Header() {
+function Header({ mode }) {
+  const [active, setActive] = useState(1);
+
+  const handleActive = (id) => {
+    setActive(id);
+  };
+
+  const navbarItems = [
+    {
+      id: 1,
+      name: "HOME",
+      link: "#",
+    },
+    {
+      id: 2,
+      name: "SPACES",
+      link: "#feature",
+    },
+    {
+      id: 3,
+      name: "PRODUCTS & SERVICES",
+      link: "#product",
+    },
+    {
+      id: 4,
+      name: "SHOWROOMS",
+      link: "#reason",
+    },
+    {
+      id: 5,
+      name: "COMPANY",
+      link: "#project",
+    },
+    {
+      id: 6,
+      name: "MEDIA",
+      link: "#media",
+    },
+    {
+      id: 7,
+      name: "CONTACT",
+      link: "#footer",
+    },
+  ];
+
   return (
-    <>
-      <input id="switch" type="checkbox" />
-      <label htmlFor="switch">
-        <div className="ball"></div>
-      </label>
-      {/* <div className="dark-mode active">
-          
-        </div>
-        <div className="light-mode">
-          
-        </div> */}
+    <div className={mode}>
       <div className="background">
-        <Image src={images.backgroundHeader} alt="bgHeader" />
+        <Image
+          src={
+            mode === "light" ? images.backgroundHeader : images.backgroundWhite
+          }
+          alt="bgHeader"
+        />
       </div>
       <header className="header" id="header">
         <div id="logo">
-          <Image src={images.logo} alt="Logo" />
+          <h1>Logo</h1>
         </div>
         <NavBar>
-          <NavBarItem>HOME</NavBarItem>
-          <NavBarItem>SPACES</NavBarItem>
-          <NavBarItem>PRODUCTS & SERVICES</NavBarItem>
-          <NavBarItem>SHOWROOMS</NavBarItem>
-          <NavBarItem>COMPANY</NavBarItem>
-          <NavBarItem>MEDIA</NavBarItem>
-          <NavBarItem>CONTACT</NavBarItem>
+          {navbarItems.map((navbarItem) => (
+            <NavBarItem
+              link={navbarItem.link}
+              id={navbarItem.id}
+              active={active}
+              key={navbarItem.id}
+              onClick={() => handleActive(navbarItem.id)}
+            >
+              {navbarItem.name}
+            </NavBarItem>
+          ))}
         </NavBar>
       </header>
       <Banner />
-    </>
+    </div>
   );
 }
 

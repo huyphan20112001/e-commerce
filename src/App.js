@@ -1,3 +1,5 @@
+import { useState } from "react";
+import "./App.scss";
 import Banner from "./layouts/components/Banner/Banner";
 import Feature from "./layouts/components/Feature/Feature";
 import Footer from "./layouts/components/Footer/Footer";
@@ -9,21 +11,33 @@ import Projects from "./layouts/components/Projects/Projects";
 import Reason from "./layouts/components/Reason/Reason";
 import Services from "./layouts/components/Services/Services";
 function App() {
+  const [mode, setMode] = useState("light");
+
+  const handleToggle = () => {
+    setMode(mode === "light" ? "dark" : "light");
+  };
+
   return (
-    <div className="wrapper" id="wrapper">
+    <div className={`wrapper ${mode}`} id="wrapper">
+      <div className={`mode ${mode}`}>
+        <input id="switch" type="checkbox" />
+        <label htmlFor="switch" onClick={handleToggle}>
+          <div className="ball"></div>
+        </label>
+      </div>
       <div className="container">
-        <Header />
-        <Feature />
+        <Header mode={mode} />
+        <Feature mode={mode} />
       </div>
       <div className="container-fluid">
-        <Products />
+        <Products mode={mode} />
       </div>
       <Services />
-      <Reason />
+      <Reason mode={mode} />
       <Projects />
-      <ListServices />
+      <ListServices mode={mode} />
       <Media />
-      <Footer />
+      <Footer mode={mode} />
     </div>
   );
 }

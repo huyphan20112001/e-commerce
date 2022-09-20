@@ -3,9 +3,9 @@ import React from "react";
 import Image from "../../../components/Image/Image";
 import images from "../../../asssets/image";
 
-function Footer() {
+function Footer({ mode }) {
   return (
-    <footer id="footer" className="footer">
+    <footer id="footer" className={`footer ${mode}`}>
       <div className="container">
         <div className="wrapper-footer">
           <div className="footer-logo-social">

@@ -11,7 +11,14 @@ function Media() {
         <div className="media-list">
           <MediaItem />
         </div>
-        <Button href="#" primary learn learnBlackFull viewAll>
+        <Button
+          href="https://www.youtube.com/watch?v=4tYuIU7pLmI"
+          target="_blank"
+          primary
+          learn
+          learnBlackFull
+          viewAll
+        >
           VIEW ALL
         </Button>
       </div>

@@ -23,10 +23,34 @@
   align-items: stretch;
   flex-wrap: nowrap;
   overflow-x: hidden;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-out;
 }
 
 .fea-wrapper {
   width: 100%;
   overflow: hidden;
+}
+
+.dark .fea-heading {
+  color: var(--white);
+}
+.dark .fea-item {
+  background-color: var(--grey-31);
+}
+.dark .fea-title {
+  color: var(--white);
+}
+.dark .fea-desc {
+  color: var(--grey-ae);
+}
+
+.dark .btn-view {
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+@media screen and (min-width: 1920px) {
+  .feature {
+    padding: 200px 0 0 0;
+  }
 }

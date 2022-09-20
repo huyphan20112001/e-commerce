@@ -4,9 +4,9 @@ import Image from "../../../components/Image/Image";
 import Button from "../../../components/Button/Button.js";
 import images from "../../../asssets/image";
 
-function Reason() {
+function Reason({ mode }) {
   return (
-    <div className="container-fluid">
+    <div className={`container-fluid ${mode}`}>
       <div id="reason" className="reason">
         <div className="container">
           <div className="reason-wrapper">
@@ -35,7 +35,12 @@ function Reason() {
                   A SMART WAY TO LEED CERTIFICATION
                 </p>
               </div>
-              <Button href="#" primary learn learnBlackFull>
+              <Button
+                href="https://www.youtube.com/watch?v=gQlMMD8auMs"
+                primary
+                learn
+                learnBlackFull
+              >
                 LEARN MORE
               </Button>
             </div>

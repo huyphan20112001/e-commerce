@@ -8,6 +8,10 @@
   white-space: nowrap;
   overflow: hidden !important;
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .fea-desc {
   font-size: 1.6rem;
@@ -15,6 +19,14 @@
   color: var(--grey-3c);
   margin-bottom: 24px;
   text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+  -webkit-line-clamp: 3;
+  height: 75px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  width: 100%;
 }
 .btn-view {
   color: var(--black);

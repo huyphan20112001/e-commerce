@@ -5,6 +5,7 @@
   padding-top: 39px;
   position: relative;
   z-index: 10;
+  overflow: hidden;
 }
 .background {
   position: absolute;
@@ -16,9 +17,9 @@
 #logo {
   color: var(--white);
 }
-#logo img {
-  display: block;
-  width: 150px;
+#logo h1 {
+  font-size: 5.1rem;
+  line-height: 5.1rem;
 }
 
 // DARK / LIGHT
@@ -32,86 +33,9 @@
   // height: 60px;
   cursor: pointer;
 }
-
-.dark-mode,
-.light-mode {
-  width: 60px;
-  height: 60px;
+.dark .background {
+  background-color: var(--black);
 }
-
-.mode.dark .dark-mode {
-  display: block;
-}
-.mode.dark .light-mode {
-  display: none;
-}
-.mode.light .dark-mode {
-  display: none;
-}
-.mode.light .light-mode {
-  display: block;
-}
-
-.mode {
-  top: 100px;
-  right: 20px;
-}
-
-#switch {
-  position: fixed;
-  visibility: hidden;
-  z-index: 100;
-}
-
-#switch:checked + label .ball {
-  animation: slideOn 0.3s linear forwards;
-}
-label {
-  background-color: var(--white);
-  z-index: 100;
-  width: 80px;
-  height: 40px;
-  position: fixed;
-  top: 100px;
-  right: 20px;
-  display: block;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-.ball {
-  background: var(--black);
-  height: 34px;
-  width: 34px;
-  border-radius: 50%;
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  align-items: center;
-  justify-content: center;
-  animation: slideOff 0.3s linear forwards;
-}
-
-@keyframes slideOn {
-  0% {
-    transform: translateX(0) scale(1);
-  }
-  50% {
-    transform: translateX(20px) scale(1.2);
-  }
-  100% {
-    transform: translateX(40px) scale(1);
-  }
-}
-
-@keyframes slideOff {
-  0% {
-    transform: translateX(40px) scale(1);
-  }
-  50% {
-    transform: translateX(20px) scale(1.2);
-  }
-  100% {
-    transform: translateX(0) scale(1);
-  }
+.dark #logo {
+  color: var(--black);
 }

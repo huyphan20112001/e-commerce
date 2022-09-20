@@ -13,3 +13,18 @@
   display: flex;
   flex-direction: column;
 }
+
+.dark .service-heading {
+  color: var(--white);
+}
+.dark .service-item {
+  background-color: var(--grey-31);
+}
+.dark .service-title,
+.dark .service-desc {
+  color: var(--white);
+}
+.dark .btn-view-black {
+  color: var(--white);
+  border: 2px solid var(--white);
+}

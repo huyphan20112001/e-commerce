@@ -2,6 +2,7 @@ import "./ProductsItem.scss";
 import images from "../../asssets/image";
 import React from "react";
 import Image from "../Image/Image";
+import Button from "../Button/Button";
 
 const products = [
   {
@@ -30,11 +31,19 @@ const products = [
   },
 ];
 
+const handleClick = () => {
+  alert("Blackpink in ur area");
+};
+
 function ProductsItem() {
   return (
     <>
       {products.map((product) => (
-        <div key={product.id} className={"product-item-".concat(product.id)}>
+        <div
+          onClick={handleClick}
+          key={product.id}
+          className={"product-item-".concat(product.id)}
+        >
           <div className="product-img">
             <Image src={product.img} alt={product.title} />
           </div>
@@ -42,6 +51,7 @@ function ProductsItem() {
             <h4 className="product-title">{product.title}</h4>
             <p className="product-desc">{product.description}</p>
           </div>
+          <div className="background-bottom"></div>
         </div>
       ))}
     </>

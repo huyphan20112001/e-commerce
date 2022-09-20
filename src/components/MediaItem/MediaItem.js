@@ -53,7 +53,14 @@ function MediaItem() {
             <h4 className="media-title">{medium.title}</h4>
             <p className="media-desc">{medium.description}</p>
           </div>
-          <Button href="#" primary learn learnBlackBorder read>
+          <Button
+            href="https://www.youtube.com/watch?v=4tYuIU7pLmI"
+            target="_blank"
+            primary
+            learn
+            learnBlackBorder
+            read
+          >
             READ MORE
           </Button>
         </div>

@@ -1,4 +1,4 @@
-#footer {
+.footer {
   padding: 68px 0;
   background-color: var(--black);
 }
@@ -72,4 +72,7 @@
 .footer-products-item,
 .footer-services-item {
   color: var(--grey-a4);
+}
+.footer.dark {
+  background-color: var(--grey-31);
 }

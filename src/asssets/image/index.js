@@ -30,6 +30,7 @@ const images = {
   fb: require("./fb.png"),
   tw: require("./tw.png"),
   ig: require("./ig.png"),
+  backgroundWhite: require("./backgroundWhite.png"),
 };
 
 export default images;

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import FeatureItem from "../../../components/FeatureItem/FeatureItem";
 import images from "../../../asssets/image";
 
-function Feature() {
+function Feature({ mode }) {
   const [indexFeature, setIndexFeature] = useState(0);
 
   const handleNext = () => {
@@ -28,6 +28,7 @@ function Feature() {
       title: "Air Insulated Switchgear",
       description:
         "Ante mus blandit sapien sociosqu per consequat ad. Aenean habitasse interdum letius lobortis primis tortor.",
+      link: "https://www.youtube.com/watch?v=gQlMMD8auMs",
     },
     {
       id: 2,
@@ -35,6 +36,7 @@ function Feature() {
       title: "Mira Switches",
       description:
         "Ante mus blandit sapien sociosqu per consequat ad. Aenean habitasse interdum letius lobortis primis tortor.",
+      link: "https://www.youtube.com/watch?v=gQlMMD8auMs",
     },
     {
       id: 3,
@@ -42,6 +44,7 @@ function Feature() {
       title: "Transformers & Package Substations",
       description:
         "Ante mus blandit sapien sociosqu per consequat ad. Aenean habitasse interdum letius lobortis primis tortor.",
+      link: "https://www.youtube.com/watch?v=gQlMMD8auMs",
     },
     {
       id: 4,
@@ -49,6 +52,7 @@ function Feature() {
       title: "Transformers & Package Substations",
       description:
         "Ante mus blandit sapien sociosqu per consequat ad. Aenean habitasse interdum letius lobortis primis tortor.",
+      link: "https://www.youtube.com/watch?v=gQlMMD8auMs",
     },
     {
       id: 5,
@@ -56,6 +60,7 @@ function Feature() {
       title: "Transformers & Package Substations",
       description:
         "Ante mus blandit sapien sociosqu per consequat ad. Aenean habitasse interdum letius lobortis primis tortor.",
+      link: "https://www.youtube.com/watch?v=gQlMMD8auMs",
     },
     {
       id: 6,
@@ -63,11 +68,12 @@ function Feature() {
       title: "Transformers & Package Substations",
       description:
         "Ante mus blandit sapien sociosqu per consequat ad. Aenean habitasse interdum letius lobortis primis tortor.",
+      link: "https://www.youtube.com/watch?v=gQlMMD8auMs",
     },
   ];
 
   return (
-    <div id="feature" className="feature">
+    <div id="feature" className={`feature ${mode}`}>
       <h3 className="fea-heading">FEATURED COLLECTION</h3>
       <div className="fea-track">
         <div className="prev-btn" onClick={handlePrev}>
@@ -87,6 +93,7 @@ function Feature() {
           >
             {features.map((feature) => (
               <FeatureItem
+                link={feature.link}
                 key={feature.id}
                 img={feature.img}
                 title={feature.title}

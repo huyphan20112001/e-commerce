@@ -15,6 +15,10 @@
   font-weight: 600;
   line-height: 160%;
   color: #000000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .service-desc {
   font-size: 1.6rem;
@@ -22,6 +26,11 @@
   color: #000000;
   line-height: 160%;
   margin-bottom: 40px;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  width: 100%;
 }
 .service-img {
   height: 100%;

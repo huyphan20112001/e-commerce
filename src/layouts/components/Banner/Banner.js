@@ -55,12 +55,23 @@ function Banner() {
                 <div className="banner-desc">
                   <h3 className="banner-title">{banner.title}</h3>
                   <p className="banner-detail">{banner.description}</p>
-                  <Button primary learn href="#">
+                  <Button
+                    primary
+                    learn
+                    href="https://www.youtube.com/watch?v=gQlMMD8auMs"
+                    target="_blank"
+                  >
                     LEARN MORE
                   </Button>
                 </div>
                 <div className="banner-video">
-                  <Image src={banner.video} alt="video" />
+                  <Button
+                    target="_blank"
+                    video
+                    href="https://www.youtube.com/watch?v=gQlMMD8auMs"
+                  >
+                    <Image src={banner.video} alt="video" />
+                  </Button>
                 </div>
               </div>
             </>

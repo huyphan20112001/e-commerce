@@ -7,6 +7,9 @@
   --grey-e3: #e3e3e3;
   --grey-3b: #3b3b3b;
   --grey-a4: #a4a4a4;
+  --grey-31: #313131;
+  -grey-61: #616161;
+  --grey-ae: #aeaeae;
 }
 
 * {
@@ -61,13 +64,18 @@ img {
   object-fit: cover;
 }
 
-.wrapper {
+#wrapper {
   max-width: 100%;
   margin: 0 auto;
-  background-color: #f5f5f5;
   z-index: -10;
+  transition: all 0.3s ease;
 }
-
+.wrapper.light {
+  background-color: #f5f5f5;
+}
+.wrapper.dark {
+  background-color: var(--black);
+}
 .container {
   max-width: 1422px;
   margin: 0 auto;
@@ -76,4 +84,20 @@ img {
 
 .container-fluid {
   max-width: 100%;
+}
+.background-bottom {
+  background: linear-gradient(
+    180deg,
+    rgba(17, 16, 16, 0) 0%,
+    rgba(17, 16, 16, 0.74) 72.92%
+  );
+  backdrop-filter: blur(1.5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 0px 0px 20px 20px;
+  height: 120px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }

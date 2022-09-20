@@ -14,6 +14,7 @@ function Button({
   read,
   viewAll,
   learnBlackFull,
+  video,
   ...passProps
 }) {
   let Component = "button";
@@ -27,17 +28,20 @@ function Button({
   } else if (href) {
     props.href = href;
     Component = "a";
+  } else if (video) {
+    Component = "div";
   }
 
   let classes = [
-    "btn-primary",
+    primary ? "btn-primary" : "",
     learn ? "btn-learn" : "",
     view ? "btn-view" : "",
-    learnBlackBorder ? "btn-view-black" : null,
-    learnBlackFull ? "btn-view-black-full" : null,
-    project ? "btn-project" : null,
-    read ? "btn-read" : null,
-    viewAll ? "btn-view-all" : null,
+    learnBlackBorder ? "btn-view-black" : "",
+    learnBlackFull ? "btn-view-black-full" : "",
+    project ? "btn-project" : "",
+    read ? "btn-read" : "",
+    viewAll ? "btn-view-all" : "",
+    video ? "video" : "",
   ];
   // if (learn) {
   //   props.learn = learn;

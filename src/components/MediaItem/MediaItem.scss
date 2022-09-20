@@ -37,6 +37,12 @@
   color: var(--black);
   letter-spacing: 0.2px;
   margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  width: 100%;
 }
 .media-desc {
   font-size: 1.6rem;
@@ -44,4 +50,26 @@
   line-height: 160%;
   color: var(--black);
   margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  width: 100%;
+}
+
+.dark .media-item-1,
+.dark .media-item-2,
+.dark .media-item-3,
+.dark .media-item-4,
+.dark .media-item-5 {
+  background-color: var(--grey-31);
+}
+
+.dark .media-title {
+  color: var(--white);
+}
+
+.dark .media-desc {
+  color: var(--grey-ae);
 }
