@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/e-commerce/static/css/main.7b1e0379.css",
+    "main.css": "/e-commerce/static/css/main.6957be42.css",
     "main.js": "/e-commerce/static/js/main.1d694805.js",
     "static/js/787.46493d11.chunk.js": "/e-commerce/static/js/787.46493d11.chunk.js",
     "static/media/prod1.png": "/e-commerce/static/media/prod1.dc1020f281c9507c3dcb.png",
@@ -33,12 +33,12 @@
     "static/media/Proxima-Nova-Bold.woff": "/e-commerce/static/media/Proxima-Nova-Bold.6cd7dcaa6293ecf61e80.woff",
     "static/media/Proxima-Nova-Regular.woff2": "/e-commerce/static/media/Proxima-Nova-Regular.6c83037ae28747e6d774.woff2",
     "index.html": "/e-commerce/index.html",
-    "main.7b1e0379.css.map": "/e-commerce/static/css/main.7b1e0379.css.map",
+    "main.6957be42.css.map": "/e-commerce/static/css/main.6957be42.css.map",
     "main.1d694805.js.map": "/e-commerce/static/js/main.1d694805.js.map",
     "787.46493d11.chunk.js.map": "/e-commerce/static/js/787.46493d11.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b1e0379.css",
+    "static/css/main.6957be42.css",
     "static/js/main.1d694805.js"
   ]
 }
