@@ -11,33 +11,33 @@ import Projects from "./layouts/components/Projects/Projects";
 import Reason from "./layouts/components/Reason/Reason";
 import Services from "./layouts/components/Services/Services";
 function App() {
-  const [mode, setMode] = useState("light");
+  const [theme, setTheme] = useState("light");
 
   const handleToggle = () => {
-    setMode(mode === "light" ? "dark" : "light");
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
   return (
-    <div className={`wrapper ${mode}`} id="wrapper">
-      <div className={`mode ${mode}`}>
+    <div className="wrapper" id="wrapper" data-theme={theme}>
+      <div className={`mode`}>
         <input id="switch" type="checkbox" />
         <label htmlFor="switch" onClick={handleToggle}>
           <div className="ball"></div>
         </label>
       </div>
       <div className="container">
-        <Header mode={mode} />
-        <Feature mode={mode} />
+        <Header theme={theme} />
+        <Feature />
       </div>
       <div className="container-fluid">
-        <Products mode={mode} />
+        <Products />
       </div>
       <Services />
-      <Reason mode={mode} />
+      <Reason />
       <Projects />
-      <ListServices mode={mode} />
+      <ListServices />
       <Media />
-      <Footer mode={mode} />
+      <Footer />
     </div>
   );
 }

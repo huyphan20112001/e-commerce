@@ -10,15 +10,12 @@ function Feature({ mode }) {
     indexFeature < features.length - 3
       ? setIndexFeature((prev) => prev + 1)
       : setIndexFeature(0);
-
-    console.log(indexFeature);
   };
 
   const handlePrev = () => {
     indexFeature === 0
       ? setIndexFeature(features.length - 3)
       : setIndexFeature((prev) => prev - 1);
-    console.log(indexFeature);
   };
 
   const features = [
@@ -76,7 +73,7 @@ function Feature({ mode }) {
     <div id="feature" className={`feature ${mode}`}>
       <h3 className="fea-heading">FEATURED COLLECTION</h3>
       <div className="fea-track">
-        <div className="prev-btn" onClick={handlePrev}>
+        <div className="prev-btn fea-btn" onClick={handlePrev}>
           <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
             <path d="M20 44 0 24 20 4l2.8 2.85L5.65 24 22.8 41.15Z" />
           </svg>
@@ -102,7 +99,7 @@ function Feature({ mode }) {
             ))}
           </div>
         </div>
-        <div className="next-btn" onClick={handleNext}>
+        <div className="next-btn fea-btn" onClick={handleNext}>
           <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
             <path d="m15.2 43.9-2.8-2.85L29.55 23.9 12.4 6.75l2.8-2.85 20 20Z" />
           </svg>

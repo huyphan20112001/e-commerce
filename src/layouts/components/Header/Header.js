@@ -6,7 +6,7 @@ import Banner from "../Banner/Banner";
 import NavBar from "../NavBar/NavBar";
 import "./Header.scss";
 
-function Header({ mode }) {
+function Header({ theme }) {
   const [active, setActive] = useState(1);
 
   const handleActive = (id) => {
@@ -52,11 +52,11 @@ function Header({ mode }) {
   ];
 
   return (
-    <div className={mode}>
+    <>
       <div className="background">
         <Image
           src={
-            mode === "light" ? images.backgroundHeader : images.backgroundWhite
+            theme === "light" ? images.backgroundHeader : images.backgroundWhite
           }
           alt="bgHeader"
         />
@@ -80,7 +80,7 @@ function Header({ mode }) {
         </NavBar>
       </header>
       <Banner />
-    </div>
+    </>
   );
 }
 

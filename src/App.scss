@@ -1,6 +1,9 @@
 .mode {
   z-index: 22;
 }
+#wrapper {
+  background-color: var(--background-wrapper);
+}
 
 #switch {
   position: fixed;

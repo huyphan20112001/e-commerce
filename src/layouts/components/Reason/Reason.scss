@@ -1,5 +1,5 @@
 .reason {
-  background-color: var(--white);
+  background-color: var(--background-reason);
   padding: 100px 0;
 }
 
@@ -16,29 +16,17 @@
   font-size: 4.8rem;
   line-height: 4.8rem;
   font-weight: 700;
-  color: var(--black);
+  color: var(--reason-heading);
   margin-bottom: 24px;
 }
 .reason-detail p {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 160%;
-  color: var(--grey-3b);
+  color: var(--reason-detail);
   margin-bottom: 15px;
   max-width: 780px;
 }
 .reason-detail p:last-child {
   margin-bottom: 40px;
-}
-
-.dark .reason {
-  background-color: var(--black);
-}
-.dark .reason-heading,
-.dark .reason-detail p {
-  color: var(--white);
-}
-.dark .btn-view-black-full {
-  color: var(--white);
-  border: 2px solid var(--white);
 }

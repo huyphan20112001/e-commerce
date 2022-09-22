@@ -1,6 +1,6 @@
 .btn-primary {
-  color: var(--white);
-  border: 2px solid var(--white);
+  color: var(--btn-primary);
+  border: 2px solid var(--btn-primary);
   border-radius: 9px;
   font-size: 1.6rem;
   line-height: 1.9rem;
@@ -15,11 +15,11 @@
   width: 180px;
 }
 .btn-view-black {
-  color: var(--black);
-  border: 2px solid var(--black);
+  color: var(--btn-view-black);
+  border: 2px solid var(--btn-view-black);
 }
 .btn-view-black-full {
-  background-color: var(--black);
+  background-color: var(--btn-view-black-full);
   line-height: 1.6rem;
   height: 48px;
   width: 180px;

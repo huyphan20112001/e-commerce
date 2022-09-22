@@ -15,7 +15,7 @@
 }
 
 #logo {
-  color: var(--white);
+  color: var(--header-color);
 }
 #logo h1 {
   font-size: 5.1rem;
@@ -32,10 +32,4 @@
   // width: 60px;
   // height: 60px;
   cursor: pointer;
-}
-.dark .background {
-  background-color: var(--black);
-}
-.dark #logo {
-  color: var(--black);
 }

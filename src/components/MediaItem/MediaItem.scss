@@ -23,7 +23,7 @@
 .media-item-3,
 .media-item-4,
 .media-item-5 {
-  background-color: var(--grey-e3);
+  background-color: var(--media-item);
   padding: 20px;
   border-radius: 20px;
 }
@@ -34,7 +34,7 @@
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 2.6rem;
-  color: var(--black);
+  color: var(--media-title);
   letter-spacing: 0.2px;
   margin-bottom: 5px;
   overflow: hidden;
@@ -48,7 +48,7 @@
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 160%;
-  color: var(--black);
+  color: var(--media-desc);
   margin-bottom: 8px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -56,20 +56,4 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   width: 100%;
-}
-
-.dark .media-item-1,
-.dark .media-item-2,
-.dark .media-item-3,
-.dark .media-item-4,
-.dark .media-item-5 {
-  background-color: var(--grey-31);
-}
-
-.dark .media-title {
-  color: var(--white);
-}
-
-.dark .media-desc {
-  color: var(--grey-ae);
 }

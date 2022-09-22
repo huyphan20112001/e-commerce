@@ -5,26 +5,11 @@
   font-size: 4.8rem;
   line-height: 5.8rem;
   font-weight: 700;
-  color: var(--black);
+  color: var(--service-heading);
   text-align: center;
   margin: 100px 0 52px 0;
 }
 .service-list {
   display: flex;
   flex-direction: column;
-}
-
-.dark .service-heading {
-  color: var(--white);
-}
-.dark .service-item {
-  background-color: var(--grey-31);
-}
-.dark .service-title,
-.dark .service-desc {
-  color: var(--white);
-}
-.dark .btn-view-black {
-  color: var(--white);
-  border: 2px solid var(--white);
 }

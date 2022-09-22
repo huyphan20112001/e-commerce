@@ -3,6 +3,7 @@
   margin-top: 132px;
   position: relative;
   z-index: 10;
+  background: var(--background-header);
 }
 @keyframes showContent {
   0% {
@@ -35,7 +36,7 @@
 .banner-title {
   font-size: 4.8rem;
   line-height: 5.8rem;
-  color: var(--white);
+  color: var(--banner-title);
   font-weight: 700;
   margin-bottom: 18px;
 }
@@ -72,7 +73,7 @@
   margin-right: 10px;
 }
 .banner-dot {
-  background: rgba(255, 255, 255, 0.23);
+  background: var(--banner-dot);
   border-radius: 10px;
   width: 40px;
   height: 10px;
@@ -82,23 +83,6 @@
 
 .banner-dot.active {
   width: 70px;
-  background: #ffffff;
+  background: var(--banner-dot-active);
   border-radius: 10px;
-}
-.dark .banner-title {
-  color: var(--black);
-}
-.dark .banner-desc {
-  color: var(--grey-61);
-}
-.dark .btn-learn {
-  border: 2px solid var(--black);
-  color: var(--black);
-}
-.dark .banner-dot {
-  background: rgba(17, 16, 16, 0.23);
-}
-
-.dark .banner-dot.active {
-  background-color: var(--black);
 }

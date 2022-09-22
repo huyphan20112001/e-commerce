@@ -1,5 +1,5 @@
 .service-item {
-  background-color: var(--grey-e3);
+  background-color: var(--service-item);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +14,7 @@
   font-size: 3rem;
   font-weight: 600;
   line-height: 160%;
-  color: #000000;
+  color: var(--service-info);
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -23,7 +23,7 @@
 .service-desc {
   font-size: 1.6rem;
   font-weight: 400;
-  color: #000000;
+  color: var(--service-info);
   line-height: 160%;
   margin-bottom: 40px;
   text-overflow: ellipsis;

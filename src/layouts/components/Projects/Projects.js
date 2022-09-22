@@ -212,8 +212,6 @@ function Projects() {
                 setActive(dot.id);
                 setStart((dot.id - 1) * pageItem);
                 setEnd(dot.id * pageItem);
-                console.log(start);
-                console.log(end);
               }}
             ></div>
           ))}

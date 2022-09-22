@@ -1,27 +1,19 @@
 #product {
-  color: var(--white);
+  color: var(--color-product);
   padding: 70px 0 80px 0;
   margin-top: 100px;
+  background-color: var(--background-product);
 }
 .product-heading {
   font-size: 4.8rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 56px;
+  color: var(--color-product);
   line-height: 5.8rem;
 }
 .product-list {
   display: grid;
   gap: 30px;
   height: 700px;
-}
-.light .product {
-  background-color: var(--black);
-}
-.dark .product {
-  background-color: var(--white);
-}
-
-.dark .product-heading {
-  color: var(--black);
 }

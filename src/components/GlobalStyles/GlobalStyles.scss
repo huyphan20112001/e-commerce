@@ -10,6 +10,72 @@
   --grey-31: #313131;
   -grey-61: #616161;
   --grey-ae: #aeaeae;
+  --background-wrapper: #ffffff;
+  --background-product: #111010;
+  --color-product: #ffffff;
+  --service-heading: #111010;
+  --service-item: #e3e3e3;
+  --service-info: #111010;
+  --project-heading: #111010;
+  --media-heading: #111010;
+  --media-item: #e3e3e3;
+  --media-title: #111010;
+  --media-desc: #000000;
+  --background-footer: #111010;
+  --header-color: #ffffff;
+  --banner-title: #ffffff;
+  --banner-desc: #a4a4a4;
+  --banner-dot: rgba(255, 255, 255, 0.23);
+  --banner-dot-active: #ffffff;
+  --feature-heading: #111010;
+  --btn-primary: #ffffff;
+  --btn-view-black: #111010;
+  --background-reason: #ffffff;
+  --reason-heading: #111010;
+  --reason-detail: #3b3b3b;
+  --btn-view-black-full: #111010;
+  --background-list-service: #111010;
+  --list-service-heading: #ffffff;
+  --fea-btn: #3b3b3b;
+  --background-fea-btn: #ffffff;
+  --feature-item: #e3e3e3;
+  --fea-title: #111010;
+  --fea-desc: #3c3c3c;
+  --btn-view: #111010;
+}
+
+[data-theme="dark"] {
+  --background-wrapper: #111010;
+  --background-product: #ffffff;
+  --color-product: #111010;
+  --service-heading: #ffffff;
+  --service-item: #313131;
+  --service-info: #ffffff;
+  --project-heading: #ffffff;
+  --media-heading: #ffffff;
+  --media-item: #313131;
+  --media-title: #ffffff;
+  --media-desc: #aeaeae;
+  --background-footer: #313131;
+  --header-color: #111010;
+  --banner-title: #111010;
+  --banner-desc: #616161;
+  --banner-dot: rgba(17, 16, 16, 0.23);
+  --banner-dot-active: #111010;
+  --feature-heading: #ffffff;
+  --btn-primary: #111010;
+  --btn-view-black: #ffffff;
+  --background-reason: #111010;
+  --reason-heading: #ffffff;
+  --reason-detail: #aeaeae;
+  --btn-view-black-full: #ffffff;
+  --background-list-service: #ffffff;
+  --list-service-heading: #111010;
+  --fea-btn: #ffffff;
+  --feature-item: #313131;
+  --fea-title: #ffffff;
+  --fea-desc: #aeaeae;
+  --btn-view: #ffffff;
 }
 
 * {

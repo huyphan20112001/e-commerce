@@ -10,13 +10,24 @@
 .prev-btn {
   cursor: pointer;
 }
+.prev-btn svg {
+  transform: translateX(7px);
+}
 .fea-heading {
   font-size: 4.8rem;
   font-weight: 700;
   line-height: 5.8rem;
   text-align: center;
   margin-bottom: 54px;
-  color: var(--black);
+  color: var(--feature-heading);
+}
+.fea-btn {
+  border: 2px solid var(--fea-btn);
+  border-radius: 50%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: var(--background-fea-btn);
 }
 .fea-list {
   display: inline-flex;
@@ -29,24 +40,6 @@
 .fea-wrapper {
   width: 100%;
   overflow: hidden;
-}
-
-.dark .fea-heading {
-  color: var(--white);
-}
-.dark .fea-item {
-  background-color: var(--grey-31);
-}
-.dark .fea-title {
-  color: var(--white);
-}
-.dark .fea-desc {
-  color: var(--grey-ae);
-}
-
-.dark .btn-view {
-  border: 2px solid var(--white);
-  color: var(--white);
 }
 
 @media screen and (min-width: 1920px) {
