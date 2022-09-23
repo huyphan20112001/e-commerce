@@ -50,7 +50,7 @@
   text-overflow: ellipsis;
   line-height: 25px;
   width: 100%;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   height: 75px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -59,7 +59,7 @@
   width: 85%;
   margin-left: auto;
   cursor: pointer;
-  max-height: 400px;
+  max-height: 425px;
 }
 
 .banner-dots {

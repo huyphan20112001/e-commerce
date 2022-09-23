@@ -42,6 +42,10 @@
   --fea-title: #111010;
   --fea-desc: #3c3c3c;
   --btn-view: #111010;
+  --fea-btn: #111010;
+  --project-dot: rgba(255, 250, 250, 0.23);
+  --project-dot-active: #111010;
+  --footer-logo: #ffffff;
 }
 
 [data-theme="dark"] {
@@ -76,6 +80,9 @@
   --fea-title: #ffffff;
   --fea-desc: #aeaeae;
   --btn-view: #ffffff;
+  --fea-btn: #ffffff;
+  --project-dot-active: #ffffff;
+  --footer-logo: #ffffff;
 }
 
 * {

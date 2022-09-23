@@ -74,8 +74,14 @@ function Feature({ mode }) {
       <h3 className="fea-heading">FEATURED COLLECTION</h3>
       <div className="fea-track">
         <div className="prev-btn fea-btn" onClick={handlePrev}>
-          <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-            <path d="M20 44 0 24 20 4l2.8 2.85L5.65 24 22.8 41.15Z" />
+          <svg
+            width="24"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+            fillRule="evenodd"
+            clipRule="evenodd"
+          >
+            <path d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z" />
           </svg>
         </div>
         <div className="fea-wrapper">
@@ -100,8 +106,14 @@ function Feature({ mode }) {
           </div>
         </div>
         <div className="next-btn fea-btn" onClick={handleNext}>
-          <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-            <path d="m15.2 43.9-2.8-2.85L29.55 23.9 12.4 6.75l2.8-2.85 20 20Z" />
+          <svg
+            width="24"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+            fillRule="evenodd"
+            clipRule="evenodd"
+          >
+            <path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z" />
           </svg>
         </div>
       </div>

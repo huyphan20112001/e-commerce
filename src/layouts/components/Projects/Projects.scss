@@ -34,7 +34,7 @@
   margin-right: 10px;
 }
 .project-dot {
-  background: rgba(17, 16, 16, 0.23);
+  background: var(--project-dot);
   border-radius: 10px;
   width: 40px;
   height: 10px;
@@ -44,6 +44,6 @@
 
 .project-dot.active {
   width: 70px;
-  background: var(--black);
+  background: var(--project-dot-active);
   border-radius: 10px;
 }

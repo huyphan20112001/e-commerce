@@ -5,7 +5,7 @@
 
 .reason-wrapper {
   display: flex;
-  align-items: center;
+  align-items: stretch;
 }
 .reason-video {
   border-radius: 36px;
@@ -29,4 +29,10 @@
 }
 .reason-detail p:last-child {
   margin-bottom: 40px;
+}
+
+.reason-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
